@@ -2,7 +2,7 @@ use async_tungstenite::tungstenite::{handshake, Message};
 use futures::channel::oneshot::Sender;
 use serde::{Deserialize, Serialize};
 
-use chat_core::{Error, Result};
+use core::{Error, Result};
 
 #[derive(Debug)]
 pub enum ProtocolFormat {

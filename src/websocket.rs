@@ -1,7 +1,7 @@
 use std::net::SocketAddr;
 
 use futures::{channel::oneshot, pin_mut, select, FutureExt, SinkExt, StreamExt, TryStreamExt};
-use chat_core::{
+use core::{
     events::{
         client::EventV1,
         server::ClientMessage,

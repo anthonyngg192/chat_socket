@@ -1,5 +1,5 @@
 use once_cell::sync::OnceCell;
-use chat_core::{Database, DatabaseInfo};
+use core::{Database, DatabaseInfo};
 use std::env;
 
 static DATABASE_CONNECTION: OnceCell<Database> = OnceCell::new();

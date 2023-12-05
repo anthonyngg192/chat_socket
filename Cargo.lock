@@ -612,53 +612,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
-name = "chat_core"
-version = "0.1.0"
-dependencies = [
- "async-lock 3.2.0",
- "async-recursion",
- "async-std",
- "async-trait",
- "authifier",
- "base64 0.21.5",
- "bincode",
- "bitfield",
- "bson",
- "deadqueue",
- "dotenv",
- "futures",
- "impl_ops",
- "indexmap 2.1.0",
- "iso8601-timestamp 0.2.13",
- "lazy_static",
- "linkify",
- "log",
- "mongodb",
- "nanoid",
- "num_enum",
- "once_cell",
- "optional_struct",
- "pretty_env_logger",
- "redis-kiss",
- "regex",
- "reqwest",
- "rocket",
- "schemars",
- "sentry",
- "serde",
- "serde_json",
- "ulid 1.1.0",
- "validator 0.16.1",
- "web-push",
-]
-
-[[package]]
 name = "chat_socket"
 version = "0.1.0"
 dependencies = [
  "async-std",
  "async-tungstenite",
- "chat_core",
+ "core",
  "futures",
  "log",
  "once_cell",
@@ -750,6 +709,47 @@ dependencies = [
  "percent-encoding",
  "time",
  "version_check",
+]
+
+[[package]]
+name = "core"
+version = "0.1.0"
+dependencies = [
+ "async-lock 3.2.0",
+ "async-recursion",
+ "async-std",
+ "async-trait",
+ "authifier",
+ "base64 0.21.5",
+ "bincode",
+ "bitfield",
+ "bson",
+ "deadqueue",
+ "dotenv",
+ "futures",
+ "impl_ops",
+ "indexmap 2.1.0",
+ "iso8601-timestamp 0.2.13",
+ "lazy_static",
+ "linkify",
+ "log",
+ "mongodb",
+ "nanoid",
+ "num_enum",
+ "once_cell",
+ "optional_struct",
+ "pretty_env_logger",
+ "redis-kiss",
+ "regex",
+ "reqwest",
+ "rocket",
+ "schemars",
+ "sentry",
+ "serde",
+ "serde_json",
+ "ulid 1.1.0",
+ "validator 0.16.1",
+ "web-push",
 ]
 
 [[package]]

@@ -1,7 +1,7 @@
 use std::env;
 
 use async_std::net::TcpListener;
-use chat_core::presence::presence_clear_region;
+use core::presence::presence_clear_region;
 
 #[macro_use]
 extern crate log;
@@ -13,7 +13,7 @@ mod websocket;
 
 #[async_std::main]
 async fn main() {
-    chat_core::configure!();
+    core::configure!();
     database::connect().await;
 
     presence_clear_region(None).await;
